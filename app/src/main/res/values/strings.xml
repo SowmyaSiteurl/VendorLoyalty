@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Trendz Vendor</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_internet_connection">No Internet Connection.Make Sure Your Wi-Fi Or Mobile Data is Turned ON.</string>
+
+    <string name="FCM_PREF">in.siteurl.www.fcm_pref</string>
+    <string name="FCM_TOKEN">in.siteurl.www.fcm_token</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="error_location_provider">error_location_provider</string>
+
+</resources>

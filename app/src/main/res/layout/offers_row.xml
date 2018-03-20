@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/productlayout">
+
+        <ImageView
+            android:id="@+id/iv_productimage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_productname"
+            android:layout_marginTop="24dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/tv_productname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="10dp"
+            android:text="Product Name"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_productprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="10dp"
+            android:text="$150"
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_productname"
+            android:text="Product Description"
+            android:textColor="@color/colorAccent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_offer"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_status"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_buyproduct"
+            android:src="@drawable/offertags" />
+
+        <ImageView
+            android:id="@+id/iv_editoffer"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignLeft="@+id/tv_expiry"
+            android:layout_alignStart="@+id/tv_expiry"
+            android:layout_below="@+id/tv_expiry"
+            android:background="@drawable/ic_create_gold_24dp" />
+
+        <TextView
+            android:id="@+id/tv_editoffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/iv_editoffer"
+            android:layout_alignStart="@+id/iv_editoffer"
+            android:layout_below="@+id/iv_editoffer"
+            android:text="Edit Offer"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent" />
+
+
+        <TextView
+            android:id="@+id/tv_termsandcondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_editoffer"
+            android:layout_alignBottom="@+id/tv_editoffer"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Terms and Condtions"
+            android:textColor="@color/colorAccent" />
+
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_termsandcondition"
+            android:text="Status"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tv_buyproduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_expiry"
+            android:text="Buy Products in Shop Only"
+            android:visibility="gone"
+            android:textColor="@color/colorAccent" />
+
+      <!--  <TextView
+            android:id="@+id/tv_productprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="10dp"
+            android:text="$150"
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp"
+            android:textStyle="bold" />-->
+
+        <TextView
+            android:id="@+id/tv_expirydate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Expiry Date"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tv_expiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_expirydate"
+            android:layout_alignStart="@+id/tv_expirydate"
+            android:layout_below="@+id/tv_expirydate"
+            android:paddingBottom="10dp"
+            android:text="10-12-2017"
+            android:textColor="@color/colorAccent"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

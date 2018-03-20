@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "93631554781",
+    "firebase_url": "https://trendz-rewardz.firebaseio.com",
+    "project_id": "trendz-rewardz",
+    "storage_bucket": "trendz-rewardz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93631554781:android:0e3e18ffae9fbe91",
+        "android_client_info": {
+          "package_name": "in.siteurl.www.vendorloyalty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93631554781-7lgkrs6qkut3ngrko4jn20746bf7obpp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_lUL6mj5GFVAbxwgRATz7IzGJsfjdATQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

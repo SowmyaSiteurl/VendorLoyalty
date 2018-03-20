@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/addofferrootlayout"
+    tools:context="in.siteurl.www.vendorloyalty.AddorEditOfferActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addofferview">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addoffertoolbar"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"></android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/addofferview">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Product Name"
+                android:inputType="text"
+                android:letterSpacing="0.025"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                app:met_textColorHint="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorPrimaryDark"
+                app:met_singleLineEllipsis="true"
+                android:maxLength="40"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtProductPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtProductName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Price"
+                android:inputType="number"
+                android:letterSpacing="0.025"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                app:met_textColorHint="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorPrimaryDark"
+                app:met_singleLineEllipsis="true"
+                android:maxLength="6"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtProductDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtProductPrice"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Description"
+                android:inputType="text"
+                android:letterSpacing="0.025"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                app:met_textColorHint="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorPrimaryDark"
+                app:met_singleLineEllipsis="true"
+                android:maxLength="40"
+                />
+
+            <ImageView
+                android:id="@+id/iv_productImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_below="@+id/edtProductDescription"
+                android:src="@drawable/ic_add_a_photo_grey_600_48dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Imgae size should be 1080*480"
+                android:layout_below="@+id/iv_productImage"
+                android:textColor="@color/colorPrimaryDark"/>
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtTermsandCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_productImage"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Terms and Conditions *"
+                android:inputType="text"
+                android:letterSpacing="0.025"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                app:met_textColorHint="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorPrimaryDark"
+                app:met_singleLineEllipsis="true"
+                android:maxLength="150"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtExpiryDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtTermsandCondition"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Expiry Date"
+                android:inputType="text"
+                android:letterSpacing="0.025"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                app:met_textColorHint="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorPrimaryDark"
+                app:met_singleLineEllipsis="true"
+                android:maxLength="150"
+                android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtExpiryDate"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_signin_background"
+                android:text="Add Product"
+                android:textAllCaps="false"
+                android:textColor="@drawable/btn_signin_text"
+                android:textSize="16dp"
+                android:padding="8dp"
+                android:onClick="validateAddProductInputs"
+                android:id="@+id/btn_addoffer"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

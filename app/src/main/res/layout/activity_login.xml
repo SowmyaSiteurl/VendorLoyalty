@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/loginrootlayout"
+    android:background="@android:color/white"
+    tools:context="in.siteurl.www.vendorloyalty.LoginActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/loginview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/logintoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginview">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <ImageView
+            android:id="@+id/iv_loginlogo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/header" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_loginlogo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:letterSpacing="0.025"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimaryDark"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edtEmail"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:letterSpacing="0.025"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimaryDark"
+            app:met_singleLineEllipsis="true"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorPrimary"/>
+
+        <CheckBox
+            android:id="@+id/cbShowPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtPassword"
+            android:layout_alignStart="@+id/edtPassword"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="Show Password"
+            android:layout_below="@+id/edtPassword"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbShowPwd"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_signin_background"
+            android:text="Sign In"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textAllCaps="false"
+            android:textColor="@drawable/btn_signin_text"
+            android:textSize="16dp"
+            android:onClick="validatecredentials"
+            android:id="@+id/btn_signin"
+            android:shadowColor="@color/primaryTextColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password ?"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_below="@id/btn_signin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:id="@+id/tv_forgotpassword" />
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

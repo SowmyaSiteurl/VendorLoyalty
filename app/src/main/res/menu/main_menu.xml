@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Offers"
+        android:id="@+id/offers_menu"
+        android:icon="@drawable/ic_card_giftcard_black_24dp"/>
+
+    <item android:title="QR Code"
+        android:id="@+id/qrcode_menu"
+        android:icon="@drawable/ic_qrcode"></item>
+
+    <item android:id="@+id/transactions_menu"
+        android:title="Transaction History"
+        android:icon="@drawable/ic_event_note_black_24dp"/>
+
+    <item android:id="@+id/changepassword_menu"
+        android:title="Change Password"
+        android:icon="@drawable/ic_mode_edit_black_24dp"/>
+
+    <item android:id="@+id/claimrequest_menu"
+        android:title="Claim Request"
+        android:icon="@drawable/ic_card_giftcard_black_24dp"/>
+
+   <item android:id="@+id/profile_menu"
+       android:title="Profile"
+       android:icon="@drawable/ic_perm_identity_black_24dp"/>
+
+    <item android:id="@+id/logout_menu"
+        android:title="Logout"
+        android:icon="@drawable/ic_power_settings_new_black_24dp"/>
+
+
+</menu>

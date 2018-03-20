@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prashanth"
+                android:textColor="@color/primaryTextColor"
+                android:id="@+id/tv_approvedname"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_approvedname"
+                android:text="Purchase Amount  "
+                android:textColor="@color/primaryTextColor"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:id="@+id/tv_purchaseamount"/>
+
+            <TextView
+                android:id="@+id/tv_purchasedamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_approvedon"
+                android:layout_toEndOf="@+id/tv_purchaseamount"
+                android:layout_toRightOf="@+id/tv_purchaseamount"
+                android:text="100 Rs"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_purchaseamount"
+                android:text="Approved on "
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/primaryTextColor"
+                android:id="@+id/tv_approvedon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_approvedon"
+                android:layout_alignBottom="@+id/tv_approvedon"
+                android:layout_toEndOf="@+id/tv_purchaseamount"
+                android:layout_toRightOf="@+id/tv_purchaseamount"
+                android:text="12 Dec 2017"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="14sp"
+                android:id="@+id/tv_approvedondate"/>
+
+            <TextView
+                android:id="@+id/tv_approvedpoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_purchaseamount"
+                android:layout_alignBottom="@+id/tv_purchaseamount"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_purchasedamount"
+                android:text="Points"
+                android:textColor="@color/primaryTextColor"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
